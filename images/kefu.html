@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO 拉满配置 -->
+<title>客服中心 - 懂你Live盒子 在线人工客服</title>
+<meta name="keywords" content="懂你Live盒子客服,在线人工客服,卡密激活问题,下载安装求助">
+<meta name="description" content="懂你Live盒子官方客服中心，提供在线人工客服、Telegram飞机客服咨询，解决下载安装、卡密激活、登录异常等问题。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="./kefu.html">
+<!-- 引用全局CSS 无内嵌样式 -->
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+/* 美化客服按钮，不改动原有任何结构 */
+.customer-list {
+  gap: 14px !important;
+}
+.customer-item {
+  padding: 16px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+  transition: all 0.2s ease;
+}
+.customer-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
+}
+.customer-icon {
+  width: 42px !important;
+  height: 42px !important;
+  font-size: 20px !important;
+  border-radius: 12px !important;
+}
+.online-btn {
+  background: linear-gradient(135deg, #3498db, #1d7ed0) !important;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 顶部导航 -->
+  <div class="top-nav">
+    <a href="../index.html">首页</a>
+    <a href="../tutorial/dongni-anzhuo-anzhuang.html">安卓下载</a>
+    <a href="../tutorial/dongni-ios-anzhung.html">苹果下载</a>
+    <a href="../tutorial/dongni-yaoqingma.html">邀请码</a>
+    <a href="../tutorial/dongni-kami.html">卡密激活</a>
+  </div>
+
+  <!-- 头部LOGO -->
+  <div class="header">
+    <div class="logo-wrap">
+      <img src="../images/dongni-1.png" class="logo-img" alt="懂你Live盒子LOGO">
+      <div class="logo-glow"></div>
+    </div>
+    <h1>懂你Live盒子 官方客服中心</h1>
+    <p class="subtitle">在线客服 · 飞机客服 多渠道专业支持</p>
+  </div>
+
+  <!-- 最新消息 带喇叭阴影 -->
+  <div class="news-card">
+    <div class="news-title">
+      <span class="horn-icon">📢</span>
+      最新消息公告
+    </div>
+    <div class="news-content">
+      <p>• 收藏本页，防止失联。</p>
+      <p>• 购买卡密时，填写的联系方式一定要记住，方便查询卡密。</p>
+      <p>• 客服工作时间：每日 19:00 - 01:00，非工作时间可留言，上线后第一时间回复处理。</p>
+    </div>
+  </div>
+
+  <!-- 客服渠道 -->
+  <div class="section-card">
+    <h2>官方客服渠道入口</h2>
+    <div class="customer-list">
+      <!-- 在线人工客服：去掉下方小字 -->
+      <a href="javascript:void(0)" class="customer-item online-btn" onclick="openOnlineChat()">
+        <div class="customer-left">
+          <div class="customer-icon">💬</div>
+          <div class="customer-info">
+            <h3>在线人工客服</h3>
+          </div>
+        </div>
+        <span class="customer-arrow">→</span>
+      </a>
+
+      <!-- 飞机客服：去掉小字，加上你的飞机号 -->
+      <a href="https://t.me/dni985" target="_blank" class="customer-item">
+        <div class="customer-left">
+          <div class="customer-icon" style="background:#2AABEE;">✈️</div>
+          <div class="customer-info">
+            <h3>Telegram飞机客服</h3>
+            <p>tm：@dni985</p>
+          </div>
+        </div>
+        <span class="customer-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 常见问题 FAQ 利于SEO -->
+  <div class="section-card">
+    <h2>常见问题解答</h2>
+    <div class="faq-box">
+      <details>
+        <summary>客服不在工作时间怎么办？</summary>
+        <p>可以在在线客服或飞机客服留言，客服上线后会优先处理留言问题，耐心等待即可。</p>
+      </details>
+      <details>
+        <summary>软件安装失败怎么解决？</summary>
+        <p>安卓手机请开启允许安装未知来源应用，苹果设备建议使用对应官方签名安装方式。</p>
+      </details>
+      <details>
+        <summary>卡密激活提示无效或过期？</summary>
+        <p>检查是否有多余空格、大小写错误，复制粘贴重新激活，仍无效可联系客服更换新卡密。</p>
+      </details>
+    </div>
+  </div>
+
+  <footer>懂你Live盒子 官方客服中心 版权所有</footer>
+
+</div>
+
+<!-- 结构化数据 JSON-LD SEO 拉满 -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"懂你Live盒子 官方客服中心",
+  "description":"懂你Live盒子在线人工客服中心，解决下载安装、卡密激活、登录报错等各类问题咨询。",
+  "url":"./kefu.html"
+}
+</script>
+
+<!-- Toast 提示 -->
+<div id="toast" class="toast"></div>
+
+<!-- 你的Tawk.to客服代码（已配置：隐藏右下角图标，只通过按钮打开） -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+// 页面加载后自动隐藏右下角图标
+Tawk_API.onLoad = function(){
+    Tawk_API.hideWidget();
+};
+
+// 点击按钮打开客服窗口的函数
+function openOnlineChat(){
+    if (typeof Tawk_API !== 'undefined') {
+        Tawk_API.maximize();
+    } else {
+        alert("客服窗口加载中，请稍后再试！");
+    }
+}
+
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69f4b3408523f61c32f23b44/1jnhtodos';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
