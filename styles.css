@@ -1,0 +1,71 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"微软雅黑";background:#f6f7fb;color:#222;}
+.container{max-width:750px;margin:auto;padding:15px;}
+
+/* 顶部导航 */
+.top-nav{display:flex;justify-content:space-around;background:#fff;padding:12px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.05);margin-bottom:15px;}
+.top-nav a{text-decoration:none;color:#4b5563;font-size:13px;}
+
+/* 头部LOGO呼吸特效 */
+.header{text-align:center;padding:18px 0;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.05);margin-bottom:15px;}
+.logo-wrap{width:64px;height:64px;margin:0 auto 10px;position:relative;border-radius:50%;overflow:hidden;}
+.logo-img{width:100%;height:100%;border-radius:50%;object-fit:cover;position:relative;z-index:2;}
+.logo-glow{position:absolute;inset:0;border-radius:50%;background:#3498db;opacity:0.4;animation:breath 2s infinite ease-in-out;z-index:1;}
+@keyframes breath{0%{transform:scale(1);opacity:0.5;}50%{transform:scale(1.2);opacity:0.2;}100%{transform:scale(1);opacity:0.5;}}
+
+h1{font-size:18px;color:#222;margin:8px 0;}
+.invite-box{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:10px;}
+.copy-btn{background:#3498db;color:#fff;border:none;border-radius:6px;padding:4px 10px;cursor:pointer;}
+
+/* 卡片UI */
+.section-card{background:#fff;margin-bottom:15px;padding:16px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.04);}
+h2{font-size:16px;border-left:4px solid #3498db;padding-left:8px;margin-bottom:10px;}
+.download-btn{display:block;background:#3498db;color:#fff;text-align:center;padding:14px;border-radius:10px;text-decoration:none;margin-top:10px;}
+.tutorial-list a{display:block;padding:8px 0;border-bottom:1px solid #eee;color:#333;text-decoration:none;}
+.faq-box details{padding:8px 0;border-bottom:1px solid #eee;}
+.faq-box summary{cursor:pointer;font-weight:bold;list-style:none;}
+
+footer{text-align:center;font-size:12px;color:#999;padding:10px 0;}
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.75);color:#fff;padding:6px 18px;border-radius:20px;font-size:13px;display:none;z-index:999;}
+
+/* 三张图横排 */
+.three-img-row{display:flex;gap:6px;justify-content:center;width:100%;}
+.three-img-row img{max-width:30%;height:auto;border-radius:8px;background:none;}
+
+/* 数据统计一行三列 */
+.stats-row{display:flex;justify-content:space-around;text-align:center;margin:10px 0;}
+.stats-row .stat-num{font-size:26px;font-weight:bold;color:#3498db;display:block;}
+.stats-row .stat-label{font-size:14px;color:#666;display:block;margin-top:4px;}
+
+/* 特性文字居中 */
+.feature-desc{text-align:center;font-size:13px;color:#666;margin-bottom:10px;}
+
+/* 双按钮横排容器 */
+.btn-row-flex{display:flex;gap:10px;}
+.btn-row-flex .download-btn{flex:1;margin-top:0;}
+.btn-row-flex .btn-gray{background:#94a3b8;}
+
+/* 渐变获取激活码卡片 */
+.kami-card{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:12px;background:linear-gradient(90deg,#3498db,#9b59b6);color:#fff;text-decoration:none;margin-top:10px;}
+.kami-left{display:flex;align-items:center;gap:10px;}
+.kami-icon{font-size:18px;}
+.kami-text{text-align:left;}
+.kami-title{font-size:15px;}
+.kami-subtitle{font-size:12px;opacity:0.9;}
+.kami-arrow{width:28px;height:28px;border-radius:50%;background:#fff;color:#3498db;display:flex;align-items:center;justify-content:center;font-size:14px;}
+
+/* 客服中心专用样式 无重复 */
+.subtitle {font-size:13px;color:#666;margin-top:5px;}
+.customer-list {display:flex;flex-direction:column;gap:10px;}
+.customer-item {display:flex;align-items:center;justify-content:space-between;padding:14px;background:#f9fafc;border-radius:10px;text-decoration:none;color:#222;}
+.customer-left {display:flex;align-items:center;gap:10px;}
+.customer-icon {width:36px;height:36px;border-radius:8px;background:#3498db;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;}
+.customer-info h3 {font-size:15px;margin:0;}
+.customer-info p {font-size:12px;color:#666;margin:2px 0 0;}
+.customer-arrow {color:#999;}
+.online-btn {background:linear-gradient(90deg,#3498db,#2980b9);color:#fff;}
+.online-btn .customer-icon {background:#fff;color:#3498db;}
+.news-card {background:#fff;margin-bottom:15px;padding:16px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.08);}
+.news-title {display:flex;align-items:center;gap:6px;font-size:16px;font-weight:bold;color:#333;margin-bottom:10px;}
+.news-title .horn-icon {font-size:18px;color:#e74c3c;}
+.news-content {font-size:13px;color:#666;line-height:1.6;}
